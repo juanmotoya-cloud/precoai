@@ -251,14 +251,27 @@ function excluirResultadoIncompativel(nome, termo) {
     const t = normalizar(termo);
 
    
+
 if (t === "arroz") {
     return !n.includes("arroz") ||
         [
             "arroz de brocolis",
+            "arroz c brocolis",
+            "arroz-doce",
             "arroz doce",
-            "refil",
-            "dog chow",
+            "arroz temperado",
+            "arroz carreteiro",
+            "risoto",
+            "risotto",
+            "bolinho de arroz",
+            "biscoito de arroz",
+            "farinha de arroz",
+            "bebida de arroz",
+            "leite de arroz",
+            "mingau",
             "racao",
+            "ração",
+            "dog chow",
             "alimento para caes",
             "alimento para gatos",
             "cachorro",
@@ -266,15 +279,10 @@ if (t === "arroz") {
             "gato",
             "gatos",
             "refeicao",
-            "arroz de brocolis",
-            "arroz c brocolis",
-            "arroz-doce",
-            "MINGAU",
-            "Mingau",
-            "Dog",
-            "ALIM.P/",
-            "prato feito"
-        ].some(p => n.includes(p));
+            "prato feito",
+            "refil",
+            "brinquedo"
+        ].some(p => n.includes(normalizar(p)));
 }
     if (t.includes("farinha de mandioca")) {
         return !n.includes("farinha") || !n.includes("mandioca") || n.includes("farinha de trigo");
