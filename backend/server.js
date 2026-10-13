@@ -250,9 +250,25 @@ function excluirResultadoIncompativel(nome, termo) {
     const n = normalizar(nome);
     const t = normalizar(termo);
 
-    if (t === "arroz") {
-        return ["arroz de brocolis", "arroz doce", "refil"].some(p => n.includes(p));
-    }
+   
+if (t === "arroz") {
+    return !n.includes("arroz") ||
+        [
+            "arroz de brocolis",
+            "arroz doce",
+            "refil",
+            "dog chow",
+            "racao",
+            "alimento para caes",
+            "alimento para gatos",
+            "cachorro",
+            "cachorros",
+            "gato",
+            "gatos",
+            "refeicao",
+            "prato feito"
+        ].some(p => n.includes(p));
+}
     if (t.includes("farinha de mandioca")) {
         return !n.includes("farinha") || !n.includes("mandioca") || n.includes("farinha de trigo");
     }
