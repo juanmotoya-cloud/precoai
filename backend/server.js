@@ -266,6 +266,9 @@ if (t === "arroz") {
             "gato",
             "gatos",
             "refeicao",
+            "arroz de brocolis",
+            "arroz c brocolis",
+            "arroz-doce",
             "prato feito"
         ].some(p => n.includes(p));
 }
