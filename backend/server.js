@@ -369,18 +369,168 @@ if (t === "arroz") {
             "mistura lactea", "suplemento alimentar", "achocolatado"
         ].some(p => n.includes(p));
     }
+  
+    // ÓLEO
     if (t.includes("oleo")) {
-        return !n.includes("oleo") || ["oleo corporal", "oleo capilar", "lubrificante"].some(p => n.includes(p));
+        return !n.includes("oleo") || [
+            "oleo corporal",
+            "oleo capilar",
+            "oleo de cabelo",
+            "oleo bronzeador",
+            "oleo de banho",
+            "oleo essencial",
+            "oleo lubrificante",
+            "oleo automotivo",
+            "oleo de motor",
+            "oleo hidraulico",
+            "oleo de freio",
+            "oleo de transmissao",
+            "oleo mineral cosmetico",
+            "oleo de massagem",
+            "oleo de silicone",
+            "oleo de peroba",
+            "oleo para barba",
+            "oleo pos banho",
+            "oleo para bebe",
+            "oleo de amendoas cosmetico",
+            "lubrificante",
+            "desengripante"
+        ].some(p => n.includes(p));
     }
+
+    // AÇÚCAR
     if (t.includes("acucar")) {
-        return !n.includes("acucar") || ["acucarado", "bala", "refrigerante"].some(p => n.includes(p));
+        return !n.includes("acucar") || [
+            "acucarado",
+            "bala",
+            "balas",
+            "refrigerante",
+            "refresco",
+            "suco",
+            "nectar",
+            "achocolatado",
+            "chocolate",
+            "bombom",
+            "chiclete",
+            "goma de mascar",
+            "pirulito",
+            "biscoito",
+            "bolacha",
+            "bolo",
+            "panetone",
+            "sorvete",
+            "gelatina",
+            "doce de leite",
+            "geleia",
+            "compota",
+            "calda",
+            "xarope",
+            "cobertura",
+            "sobremesa",
+            "pudim",
+            "mousse",
+            "iogurte",
+            "cereal matinal",
+            "barra de cereal",
+            "suplemento",
+            "alimento para animais",
+            "racao",
+            "ração",
+            "cosmetico",
+            "esfoliante",
+            "sabonete",
+            "acucar de confeiteiro decorativo"
+        ].some(p => n.includes(p));
     }
+
+    // CAFÉ
     if (t.includes("cafe")) {
-        return !n.includes("cafe") || ["cappuccino", "bala", "sabonete"].some(p => n.includes(p));
+        return !n.includes("cafe") || [
+            "cappuccino",
+            "capuccino",
+            "cappucino",
+            "cafe da manha",
+            "bala",
+            "bala de cafe",
+            "sabonete",
+            "shampoo",
+            "condicionador",
+            "creme capilar",
+            "creme corporal",
+            "esfoliante",
+            "perfume",
+            "aromatizador",
+            "essencia",
+            "vela aromatica",
+            "licor de cafe",
+            "bebida sabor cafe",
+            "sabor cafe",
+            "recheio de cafe",
+            "cobertura de cafe",
+            "sorvete de cafe",
+            "iogurte de cafe",
+            "chocolate com cafe",
+            "biscoito sabor cafe",
+            "bolo de cafe",
+            "suplemento de cafe",
+            "cafe para pele",
+            "capsula reutilizavel",
+            "filtro de cafe",
+            "cafeteira",
+            "xicara de cafe",
+            "copo para cafe",
+            "garrafa para cafe"
+        ].some(p => n.includes(p));
     }
+
+    // SAL
     if (t.includes("sal")) {
-        return !/\bsal\b/.test(n) || ["salgadinho", "salgado", "salame"].some(p => n.includes(p));
+        return !/\bsal\b/.test(n) || [
+            "salgadinho",
+            "salgado",
+            "salgados",
+            "salame",
+            "salsicha",
+            "salsichao",
+            "salchicha",
+            "salgadeira",
+            "sal de banho",
+            "sal esfoliante",
+            "sal para banho",
+            "sal amargo",
+            "sal de fruta",
+            "sal de frutas",
+            "sal mineral para animais",
+            "sal mineral bovino",
+            "sal proteinado",
+            "sal para gado",
+            "sal para piscina",
+            "sal regenerador",
+            "sal para lava loucas",
+            "sal de cura",
+            "sal de parrilla temperado",
+            "tempero pronto",
+            "mistura para tempero",
+            "caldo em cubo",
+            "caldo de carne",
+            "caldo de galinha",
+            "sopa instantanea",
+            "macarrao instantaneo",
+            "biscoito salgado",
+            "bolacha salgada",
+            "amendoim salgado",
+            "castanha salgada",
+            "pipoca salgada",
+            "batata chips",
+            "batata frita",
+            "petisco",
+            "ração",
+            "racao"
+        ].some(p => n.includes(p));
     }
+
+    // TERMOS GENÉRICOS: manter por último
+
     return !n.includes(t);
 }
 
