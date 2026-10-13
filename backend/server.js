@@ -370,29 +370,63 @@ if (t === "arroz") {
         ].some(p => n.includes(p));
     }
    // REFRIGERANTES E BEBIDAS
-    if (
-        t.includes("refrigerante") ||
-        t.includes("refri")
-    ) {
-        return !(
-            n.includes("refrigerante") ||
-            /\brefri\b/.test(n) ||
-            n.includes("cola") ||
-            n.includes("guarana") ||
-            n.includes("soda limonada") ||
-            n.includes("tonica") ||
-            n.includes("agua saborizada")
-        ) ||
-            [
-                "detergente", "desinfetante", "amaciante",
-                "limpador", "lava roupas", "sabao em po",
-                "sabao liquido", "sabonete", "shampoo",
-                "condicionador", "creme corporal",
-                "aromatizador", "essencia", "produto de limpeza",
-                "racao", "xarope para tosse"
-            ].some(p => n.includes(p));
-    }
-
+  // ==========================================
+// REFRIGERANTES
+// ==========================================
+if (
+    t.includes("refrigerante") ||
+    t.includes("refri") ||
+    t.includes("coca cola") ||
+    t.includes("coca-cola") ||
+    t.includes("pepsi") ||
+    t.includes("fanta") ||
+    t.includes("sprite") ||
+    t.includes("guarana") ||
+    t.includes("kuat") ||
+    t.includes("sukita") ||
+    t.includes("tuchaua") ||
+    t.includes("schweppes") ||
+    t.includes("itubaina") ||
+    t.includes("dolly")
+) {
+    return !(
+        n.includes("refrigerante") ||
+        /\brefri\b/.test(n) ||
+        n.includes("coca cola") ||
+        n.includes("coca-cola") ||
+        n.includes("pepsi") ||
+        n.includes("fanta") ||
+        n.includes("sprite") ||
+        n.includes("guarana") ||
+        n.includes("kuat") ||
+        n.includes("sukita") ||
+        n.includes("tuchaua") ||
+        n.includes("schweppes") ||
+        n.includes("itubaina") ||
+        n.includes("dolly") ||
+        n.includes("soda limonada") ||
+        n.includes("tonica") ||
+        n.includes("agua saborizada")
+    ) ||
+    [
+        "detergente",
+        "desinfetante",
+        "amaciante",
+        "limpador",
+        "lava roupas",
+        "sabao em po",
+        "sabao liquido",
+        "sabonete",
+        "shampoo",
+        "condicionador",
+        "creme corporal",
+        "aromatizador",
+        "essencia",
+        "produto de limpeza",
+        "racao",
+        "xarope para tosse"
+    ].some(p => n.includes(p));
+}
     // SABÃO
     if (t.includes("sabao")) {
         return !n.includes("sabao") ||
