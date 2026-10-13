@@ -369,7 +369,92 @@ if (t === "arroz") {
             "mistura lactea", "suplemento alimentar", "achocolatado"
         ].some(p => n.includes(p));
     }
-  
+   // REFRIGERANTES E BEBIDAS
+    if (
+        t.includes("refrigerante") ||
+        t.includes("refri")
+    ) {
+        return !(
+            n.includes("refrigerante") ||
+            /\brefri\b/.test(n) ||
+            n.includes("cola") ||
+            n.includes("guarana") ||
+            n.includes("soda limonada") ||
+            n.includes("tonica") ||
+            n.includes("agua saborizada")
+        ) ||
+            [
+                "detergente", "desinfetante", "amaciante",
+                "limpador", "lava roupas", "sabao em po",
+                "sabao liquido", "sabonete", "shampoo",
+                "condicionador", "creme corporal",
+                "aromatizador", "essencia", "produto de limpeza",
+                "racao", "xarope para tosse"
+            ].some(p => n.includes(p));
+    }
+
+    // SABÃO
+    if (t.includes("sabao")) {
+        return !n.includes("sabao") ||
+            [
+                "sabonete", "sabao medicinal",
+                "sabao para barba", "sabao de barbear",
+                "sabao esfoliante", "sabao cosmetico",
+                "sabao para artesanato", "base glicerinada",
+                "sabao decorativo", "sabao para animais"
+            ].some(p => n.includes(p));
+    }
+
+    // SABONETE
+    if (t.includes("sabonete")) {
+        return !n.includes("sabonete") ||
+            [
+                "sabonete liquido para loucas",
+                "sabonete para roupas",
+                "sabonete veterinario"
+            ].some(p => n.includes(p));
+    }
+
+    // DETERGENTE
+    if (t.includes("detergente")) {
+        return !n.includes("detergente") ||
+            [
+                "detergente automotivo",
+                "detergente industrial",
+                "detergente enzimatico",
+                "detergente para laboratorio",
+                "detergente hospitalar",
+                "detergente para instrumentos"
+            ].some(p => n.includes(p));
+    }
+
+    // ÁGUA
+    if (t === "agua" || t.startsWith("agua ")) {
+        return !n.includes("agua") ||
+            [
+                "agua sanitaria", "agua oxigenada",
+                "agua micelar", "agua termal",
+                "agua de colonia", "agua perfumada",
+                "agua destilada", "agua desmineralizada",
+                "agua para bateria", "agua para radiador",
+                "agua de coco", "agua tônica",
+                "agua tonica", "agua saborizada para limpeza"
+            ].some(p => n.includes(p));
+    }
+
+    // LEITE
+    if (t.includes("leite")) {
+        return !n.includes("leite") ||
+            [
+                "leite corporal", "leite de limpeza facial",
+                "leite hidratante", "leite de banho",
+                "leite de amendoas cosmetico",
+                "leite para cabelo", "leite capilar",
+                "leite para animais", "leite para bezerros",
+                "leite em po para animais"
+            ].some(p => n.includes(p));
+    }
+
     // ÓLEO
     if (t.includes("oleo")) {
         return !n.includes("oleo") || [
