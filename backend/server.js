@@ -314,12 +314,33 @@ if (t === "arroz") {
             "gatos",
             "pet food",
             "alimentacao animal",
-
+            "vinagre",
+            "vinagrete",
+            "bebida de arroz",
+            "leite de arroz",
+            "tempero",
+            "molho",
+            "farinha de arroz",
+            "creme de arroz",
+            "flocao de arroz",
+            "flocao arroz",
+            "arroz doce",
+            "risoto pronto",
+            "prato pronto",
+            "refeicao pronta",
+            "marmita",
+            "biscoito de arroz",
+            "snack de arroz",
+            "salgadinho de arroz",
+            "papel de arroz",
+            "adicional arroz",
+            "porcao de arroz",
             // Outros produtos incompatíveis
             "refeicao",
             "refeição",
             "prato feito",
             "refil",
+            
             "brinquedo"
         ].some(p => n.includes(p));
 }
