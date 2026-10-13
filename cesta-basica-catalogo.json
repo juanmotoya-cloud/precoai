@@ -1,0 +1,427 @@
+
+{
+  "nome": "Cesta Básica PreçoAí",
+  "versao": 2,
+  "regiao": "Amazonas",
+  "categorias": [
+    {
+      "id": "feijoes",
+      "nome": "Feijões",
+      "produtos": [
+        {
+          "id": "feijao",
+          "nome": "Feijão",
+          "buscas": ["FEIJAO"],
+          "excluir": ["BISCOITO", "BALA", "FEIJAO DE SOJA"]
+        },
+        {
+          "id": "feijao-carioca",
+          "nome": "Feijão carioca",
+          "buscas": ["FEIJAO CARIOCA"]
+        },
+        {
+          "id": "feijao-preto",
+          "nome": "Feijão preto",
+          "buscas": ["FEIJAO PRETO"]
+        },
+        {
+          "id": "feijao-caupi",
+          "nome": "Feijão-caupi / fradinho",
+          "buscas": ["FEIJAO CAUPI", "FEIJAO FRADINHO", "FEIJAO DE CORDA"]
+        }
+      ]
+    },
+    {
+      "id": "cereais",
+      "nome": "Cereais",
+      "produtos": [
+        {
+          "id": "arroz",
+          "nome": "Arroz",
+          "buscas": ["ARROZ"],
+          "excluir": ["ARROZ DE BROCOLIS", "BISCOITO DE ARROZ", "ARROZ DOCE"]
+        },
+        {
+          "id": "arroz-branco",
+          "nome": "Arroz branco",
+          "buscas": ["ARROZ BRANCO", "ARROZ TIPO 1"]
+        },
+        {
+          "id": "arroz-integral",
+          "nome": "Arroz integral",
+          "buscas": ["ARROZ INTEGRAL"]
+        },
+        {
+          "id": "aveia",
+          "nome": "Aveia",
+          "buscas": ["AVEIA"]
+        },
+        {
+          "id": "farinha-mandioca",
+          "nome": "Farinha de mandioca",
+          "buscas": ["FARINHA DE MANDIOCA"]
+        },
+        {
+          "id": "fuba",
+          "nome": "Fubá e farinha de milho",
+          "buscas": ["FUBA", "FARINHA DE MILHO"]
+        },
+        {
+          "id": "macarrao",
+          "nome": "Macarrão",
+          "buscas": ["MACARRAO"],
+          "excluir": ["MACARRAO INSTANTANEO SABOR"]
+        },
+        {
+          "id": "milho",
+          "nome": "Milho",
+          "buscas": ["MILHO EM GRAOS", "MILHO VERDE"]
+        }
+      ]
+    },
+    {
+      "id": "raizes-tuberculos",
+      "nome": "Raízes e tubérculos",
+      "produtos": [
+        {
+          "id": "macaxeira",
+          "nome": "Macaxeira / mandioca",
+          "buscas": ["MACAXEIRA", "MANDIOCA", "AIPIM"]
+        },
+        {
+          "id": "batata",
+          "nome": "Batata",
+          "buscas": ["BATATA INGLESA", "BATATA"]
+        },
+        {
+          "id": "batata-doce",
+          "nome": "Batata-doce",
+          "buscas": ["BATATA DOCE"]
+        },
+        {
+          "id": "inhame",
+          "nome": "Inhame",
+          "buscas": ["INHAME"]
+        },
+        {
+          "id": "cará",
+          "nome": "Cará",
+          "buscas": ["CARA"]
+        }
+      ]
+    },
+    {
+      "id": "legumes-verduras",
+      "nome": "Legumes e verduras",
+      "produtos": [
+        {
+          "id": "abobora",
+          "nome": "Abóbora",
+          "buscas": ["ABOBORA"]
+        },
+        {
+          "id": "alface",
+          "nome": "Alface",
+          "buscas": ["ALFACE"]
+        },
+        {
+          "id": "cebola",
+          "nome": "Cebola",
+          "buscas": ["CEBOLA"]
+        },
+        {
+          "id": "cenoura",
+          "nome": "Cenoura",
+          "buscas": ["CENOURA"]
+        },
+        {
+          "id": "chuchu",
+          "nome": "Chuchu",
+          "buscas": ["CHUCHU"]
+        },
+        {
+          "id": "pepino",
+          "nome": "Pepino",
+          "buscas": ["PEPINO"]
+        },
+        {
+          "id": "pimentao",
+          "nome": "Pimentão",
+          "buscas": ["PIMENTAO"]
+        },
+        {
+          "id": "repolho",
+          "nome": "Repolho",
+          "buscas": ["REPOLHO"]
+        },
+        {
+          "id": "tomate",
+          "nome": "Tomate",
+          "buscas": ["TOMATE"]
+        },
+        {
+          "id": "cheiro-verde",
+          "nome": "Cheiro-verde",
+          "buscas": ["CHEIRO VERDE", "COENTRO", "CEBOLINHA"]
+        }
+      ]
+    },
+    {
+      "id": "frutas",
+      "nome": "Frutas",
+      "produtos": [
+        {
+          "id": "banana",
+          "nome": "Banana",
+          "buscas": ["BANANA"]
+        },
+        {
+          "id": "laranja",
+          "nome": "Laranja",
+          "buscas": ["LARANJA"]
+        },
+        {
+          "id": "limao",
+          "nome": "Limão",
+          "buscas": ["LIMAO"]
+        },
+        {
+          "id": "maca",
+          "nome": "Maçã",
+          "buscas": ["MACA"]
+        },
+        {
+          "id": "mamao",
+          "nome": "Mamão",
+          "buscas": ["MAMAO"]
+        },
+        {
+          "id": "melancia",
+          "nome": "Melancia",
+          "buscas": ["MELANCIA"]
+        },
+        {
+          "id": "abacaxi",
+          "nome": "Abacaxi",
+          "buscas": ["ABACAXI"]
+        },
+        {
+          "id": "manga",
+          "nome": "Manga",
+          "buscas": ["MANGA"]
+        },
+        {
+          "id": "maracuja",
+          "nome": "Maracujá",
+          "buscas": ["MARACUJA"]
+        },
+        {
+          "id": "cupuaçu",
+          "nome": "Cupuaçu",
+          "buscas": ["CUPUACU"]
+        },
+        {
+          "id": "tucuma",
+          "nome": "Tucumã",
+          "buscas": ["TUCUMA"]
+        },
+        {
+          "id": "acai",
+          "nome": "Açaí",
+          "buscas": ["ACAI"]
+        }
+      ]
+    },
+    {
+      "id": "castanhas-nozes",
+      "nome": "Castanhas e nozes",
+      "produtos": [
+        {
+          "id": "castanha-do-brasil",
+          "nome": "Castanha-do-brasil",
+          "buscas": ["CASTANHA DO BRASIL", "CASTANHA DO PARA", "CASTANHA AMAZONICA"]
+        },
+        {
+          "id": "castanha-caju",
+          "nome": "Castanha de caju",
+          "buscas": ["CASTANHA DE CAJU"]
+        },
+        {
+          "id": "amendoim",
+          "nome": "Amendoim",
+          "buscas": ["AMENDOIM"]
+        },
+        {
+          "id": "nozes",
+          "nome": "Nozes",
+          "buscas": ["NOZES"]
+        }
+      ]
+    },
+    {
+      "id": "carnes-ovos",
+      "nome": "Carnes e ovos",
+      "produtos": [
+        {
+          "id": "carne-bovina",
+          "nome": "Carne bovina",
+          "buscas": ["CARNE BOVINA", "CARNE DE BOI"]
+        },
+        {
+          "id": "frango",
+          "nome": "Frango",
+          "buscas": ["FRANGO", "CARNE DE FRANGO"]
+        },
+        {
+          "id": "carne-suina",
+          "nome": "Carne suína",
+          "buscas": ["CARNE SUINA", "CARNE DE PORCO"]
+        },
+        {
+          "id": "peixe",
+          "nome": "Peixe",
+          "buscas": ["PEIXE", "PESCADO"]
+        },
+        {
+          "id": "ovos",
+          "nome": "Ovos",
+          "buscas": ["OVO"],
+          "excluir": ["OVOS DE PASCOA", "OVO DE CHOCOLATE"]
+        }
+      ]
+    },
+    {
+      "id": "leites-queijos",
+      "nome": "Leites e queijos",
+      "produtos": [
+        {
+          "id": "leite-em-po-integral",
+          "nome": "Leite em pó integral",
+          "buscas": ["LEITE EM PO INTEGRAL", "LEITE EM PO"]
+        },
+        {
+          "id": "leite-liquido-integral",
+          "nome": "Leite integral líquido",
+          "buscas": ["LEITE INTEGRAL", "LEITE UHT INTEGRAL", "LEITE LONGA VIDA INTEGRAL"]
+        },
+        {
+          "id": "leite-desnatado",
+          "nome": "Leite desnatado",
+          "buscas": ["LEITE DESNATADO"]
+        },
+        {
+          "id": "queijo-mussarela",
+          "nome": "Queijo muçarela",
+          "buscas": ["QUEIJO MUSSARELA", "QUEIJO MUZZARELA", "QUEIJO MOZZARELLA"]
+        },
+        {
+          "id": "queijo-coalho",
+          "nome": "Queijo coalho",
+          "buscas": ["QUEIJO COALHO"]
+        },
+        {
+          "id": "manteiga",
+          "nome": "Manteiga",
+          "buscas": ["MANTEIGA"],
+          "excluir": ["MANTEIGA DE CACAU"]
+        },
+        {
+          "id": "requeijao",
+          "nome": "Requeijão",
+          "buscas": ["REQUEIJAO"]
+        }
+      ]
+    },
+    {
+      "id": "acucares-sal-oleos-gorduras",
+      "nome": "Açúcares, sal, óleos e gorduras",
+      "produtos": [
+        {
+          "id": "acucar",
+          "nome": "Açúcar",
+          "buscas": ["ACUCAR"],
+          "excluir": ["ACUCARADO", "BISCOITO", "REFRIGERANTE"]
+        },
+        {
+          "id": "sal",
+          "nome": "Sal refinado",
+          "buscas": ["SAL REFINADO", "SAL"],
+          "excluir": ["SALGADINHO", "SALAME", "SALGADO"]
+        },
+        {
+          "id": "oleo-soja",
+          "nome": "Óleo de soja",
+          "buscas": ["OLEO DE SOJA"]
+        },
+        {
+          "id": "oleo",
+          "nome": "Outros óleos culinários",
+          "buscas": ["OLEO DE GIRASSOL", "OLEO DE CANOLA", "OLEO DE MILHO"]
+        },
+        {
+          "id": "azeite",
+          "nome": "Azeite de oliva",
+          "buscas": ["AZEITE DE OLIVA", "AZEITE EXTRA VIRGEM"]
+        },
+        {
+          "id": "margarina",
+          "nome": "Margarina",
+          "buscas": ["MARGARINA"]
+        },
+        {
+          "id": "banha",
+          "nome": "Banha",
+          "buscas": ["BANHA DE PORCO"]
+        }
+      ]
+    },
+    {
+      "id": "cafe-cha-especiarias",
+      "nome": "Café, chá e especiarias",
+      "produtos": [
+        {
+          "id": "cafe",
+          "nome": "Café",
+          "buscas": ["CAFE"],
+          "excluir": ["CAFE DA MANHA", "BALA DE CAFE"]
+        },
+        {
+          "id": "cha",
+          "nome": "Chá",
+          "buscas": ["CHA"],
+          "excluir": ["CHAPA", "CHASSI"]
+        },
+        {
+          "id": "canela",
+          "nome": "Canela",
+          "buscas": ["CANELA"]
+        },
+        {
+          "id": "colorau",
+          "nome": "Colorau",
+          "buscas": ["COLORAU"]
+        },
+        {
+          "id": "cominho",
+          "nome": "Cominho",
+          "buscas": ["COMINHO"]
+        },
+        {
+          "id": "pimenta",
+          "nome": "Pimenta",
+          "buscas": ["PIMENTA DO REINO", "PIMENTA MOIDA"]
+        },
+        {
+          "id": "oregano",
+          "nome": "Orégano",
+          "buscas": ["OREGANO"]
+        },
+        {
+          "id": "colorau-tempero",
+          "nome": "Temperos secos",
+          "buscas": ["TEMPERO SECO", "TEMPERO COMPLETO"]
+        }
+      ]
+    }
+  ]
+}
