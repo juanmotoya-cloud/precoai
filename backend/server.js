@@ -252,38 +252,78 @@ function excluirResultadoIncompativel(nome, termo) {
 
    
 
+
 if (t === "arroz") {
     return !n.includes("arroz") ||
         [
+            // Pratos preparados e receitas
             "arroz de brocolis",
             "arroz c brocolis",
+            "arroz com brocolis",
             "arroz-doce",
             "arroz doce",
             "arroz temperado",
             "arroz carreteiro",
+            "arroz a grega",
+            "arroz com legumes",
+            "arroz com cenoura",
+            "arroz com frango",
+            "arroz com carne",
+            "arroz com camarao",
+            "arroz biro biro",
+            "arroz de forno",
+            "arroz maluco",
             "risoto",
             "risotto",
             "bolinho de arroz",
+            "sushi",
+            "onigiri",
+
+            // Produtos derivados
             "biscoito de arroz",
             "farinha de arroz",
             "bebida de arroz",
             "leite de arroz",
             "mingau",
+            "creme de arroz",
+            "papinha de arroz",
+            "cereal de arroz",
+            "flocos de arroz",
+            "snack de arroz",
+            "pipoca de arroz",
+            "macarrao de arroz",
+            "massa de arroz",
+            "papel de arroz",
+
+            // Alimentação animal
             "racao",
             "ração",
             "dog chow",
+            "dog show",
             "alimento para caes",
+            "alimento para cães",
             "alimento para gatos",
+            "alimento p/caes",
+            "alim.p/caes",
+            "alim p caes",
             "cachorro",
             "cachorros",
+            "cao adulto",
+            "caes adultos",
             "gato",
             "gatos",
+            "pet food",
+            "alimentacao animal",
+
+            // Outros produtos incompatíveis
             "refeicao",
+            "refeição",
             "prato feito",
             "refil",
             "brinquedo"
-        ].some(p => n.includes(normalizar(p)));
+        ].some(p => n.includes(p));
 }
+
     if (t.includes("farinha de mandioca")) {
         return !n.includes("farinha") || !n.includes("mandioca") || n.includes("farinha de trigo");
     }
