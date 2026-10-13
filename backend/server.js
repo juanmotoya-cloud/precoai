@@ -567,7 +567,50 @@ if (t === "arroz") {
             "garrafa para cafe"
         ].some(p => n.includes(p));
     }
+ "creme dental": {
+        termos: [
+            "creme dental", "pasta de dente",
+            "pasta dental"
+        ],
+        marcas: [
+            "colgate", "oral b", "oral-b",
+            "closeup", "close up", "sensodyne",
+            "sorriso", "elmex"
+        ],
+        excluir: [
+            "escova dental", "fio dental",
+            "enxaguante bucal"
+        ]
+    },
 
+    "papel higienico": {
+        termos: [
+            "papel higienico", "papel sanitario",
+            "papel higiênico"
+        ],
+        marcas: [
+            "neve", "personal", "fofinho",
+            "mili", "duetto", "cotton"
+        ],
+        excluir: [
+            "papel toalha", "guardanapo",
+            "papel aluminio", "papel filme"
+        ]
+    },
+
+    "racao para caes": {
+        termos: [
+            "racao para caes", "racao para cachorro",
+            "alimento para caes", "alim.p/caes"
+        ],
+        marcas: [
+            "pedigree", "dog chow", "dog show",
+            "golden", "premier", "special dog",
+            "magnus", "granplus", "whiskas"
+        ],
+        excluir: []
+    }
+};
     // SAL
     if (t.includes("sal")) {
         return !/\bsal\b/.test(n) || [
