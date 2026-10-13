@@ -602,20 +602,11 @@ if (
         ].some(p => n.includes(p));
     }
  "creme dental": {
-        termos: [
-            "creme dental", "pasta de dente",
-            "pasta dental"
-        ],
-        marcas: [
-            "colgate", "oral b", "oral-b",
-            "closeup", "close up", "sensodyne",
-            "sorriso", "elmex"
-        ],
-        excluir: [
-            "escova dental", "fio dental",
-            "enxaguante bucal"
-        ]
-    },
+    termos: [
+        "creme dental", "pasta de dente",
+        "pasta dental"
+    ],
+},
 
     "papel higienico": {
         termos: [
