@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PreçoAí - Tela Principal</title>
+  <link rel="stylesheet" href="css/home.css ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+
+  <header class="header">
+
+    <div class="header-top">
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="logo-area">
+        <div class="logo-placeholder">
+          <img src="img/precoai-logo.svg" alt="PreçoAí">
+        </div>
+      </div>
+
+      <button class="flag-button" type="button" aria-label="Região do Amazonas">
+        <img src="img/Bandeira_do_Amazonas.svg.webp" alt="Bandeira do Amazonas">
+      </button>
+
+      <div class="location">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Bairro, Manaus</span>
+      </div>
+
+    </div>
+
+    <!-- BARRA DE PESQUISA -->
+
+    <form class="search-box" id="searchForm">
+      <i class="fas fa-search" aria-hidden="true"></i>
+
+      <input type="search" id="searchInput" placeholder="Buscar produtos..." aria-label="Buscar produtos">
+
+      <button type="button" class="search-scan" aria-label="Abrir formulário da Nota Fiscal Amazonense"
+        title="Abrir Nota Fiscal Amazonense"
+        onclick="window.location.href='https://nfamazonense.sefaz.am.gov.br/minha-conta/formulario/'">
+        <i class="fas fa-barcode" aria-hidden="true"></i>
+      </button>
+    </form>
+
+    <section id="searchResults" class="search-results" hidden>
+      <h2>Resultados da busca</h2>
+      <p id="searchMessage">Digite o nome de um produto.</p>
+      <div id="searchProducts"></div>
+    </section>
+
+
+  </header>
+
+
+  <!-- Dentro do header, na posição desejada -->
+
+  <!-- Menu lateral -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <aside class="side-menu" id="sideMenu">
+    <div class="menu-header">
+      <h2>Menu</h2>
+      <button id="closeMenu" aria-label="Fechar menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <nav class="menu-items">
+      <!-- Adicione novos links aqui -->
+      <a href="#inicio" class="menu-item">
+        <i class="fas fa-home"></i>
+        <span>Início</span>
+      </a>
+
+      <a href="#ofertas" class="menu-item">
+        <i class="fas fa-tags"></i>
+        <span>Ofertas</span>
+      </a>
+
+      <a href="#favoritos" class="menu-item">
+        <i class="fas fa-heart"></i>
+        <span>Favoritos</span>
+      </a>
+
+      <a href="#sobre" class="menu-item">
+        <i class="fas fa-info-circle"></i>
+        <span>Sobre o PreçoAí</span>
+      </a>
+    </nav>
+    <div class="app-version">
+      <span class="app-version-name">Motoya Studio</span>
+      <span class="app-version-number">Versão 1.0 (Beta)</span>
+      <span class="app-version-status">
+        <i class="fas fa-flask"></i>
+        Versão de testes
+      </span>
+    </div>
+  </aside>
+
+
+  <!-- CATEGORIES -->
+  <nav class="categories" id="categories">
+    <div class="category-item active" data-cat="ofertas">
+      <div class="category-icon"><i class="fas fa-tag"></i></div>
+      <span>Ofertas</span>
+    </div>
+    <div class="category-item" data-cat="mercearia">
+      <div class="category-icon"><i class="fas fa-shopping-basket"></i></div>
+      <span>Mercearia</span>
+    </div>
+    <div class="category-item" data-cat="carnes">
+      <div class="category-icon"><i class="fas fa-drumstick-bite"></i></div>
+      <span>Carnes</span>
+    </div>
+    <div class="category-item" data-cat="alimentos">
+      <div class="category-icon"><i class="fas fa-bread-slice"></i></div>
+      <span>Alimentos</span>
+    </div>
+    <div class="category-item" data-cat="limpeza">
+      <div class="category-icon"><i class="fas fa-spray-can"></i></div>
+      <span>Limpeza</span>
+    </div>
+    <div class="category-item" data-cat="doces">
+      <div class="category-icon"><i class="fas fa-candy-cane"></i></div>
+      <span>Doces</span>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+
+  <!-- BANNER -->
+  <div class="banner" id="promoBanner">
+    <div class="banner-content">
+      <span class="banner-tag" id="bannerTag"></span>
+      <h2 id="bannerTitle"></h2>
+      <p id="bannerDescription"></p>
+      <button class="banner-btn" id="bannerButton" type="button">
+        Saiba mais
+      </button>
+    </div>
+
+    <div class="banner-image">
+      <img id="bannerImage" src="" alt="" hidden>
+    </div>
+  </div>
+
+
+  <div class="banner-dots" id="bannerDots">
+    <button class="dot active" aria-label="Banner 1"></button>
+    <button class="dot" aria-label="Banner 2"></button>
+    <button class="dot" aria-label="Banner 3"></button>
+  </div>
+
+
+  <!-- NA SUA CESTA -->
+  <section class="section" id="secao-cesta">
+    <div class="section-header">
+      <h3>Na sua cesta</h3>
+      <a href="#secao-cesta" id="link-cesta">
+        Veja mais <i class="fas fa-chevron-right" style="font-size:10px"></i>
+      </a>
+    </div>
+
+    <div class="products-scroll" id="cesta-produtos">
+      <p id="cesta-status"></p>
+    </div>
+  </section>
+
+
+  <!-- OFERTAS HOJE -->
+  <section class="section ofertas-hoje">
+    <div class="section-header">
+      <h3>Ofertas Hoje</h3>
+      <a href="#">Veja mais <i class="fas fa-chevron-right" style="font-size:10px"></i></a>
+    </div>
+
+    <div class="products-scroll">
+      <!-- Produto 5 -->
+      <div class="product-card">
+        <span class="discount-badge">-25%</span>
+        <div class="product-image-placeholder">[Img Coca]</div>
+        <div class="product-info">
+          <div class="product-name">Coca-Cola Original 350ml</div>
+          <div class="price-row">
+            <span class="old-price">R$ 3,19</span>
+            <span class="current-price">R$ 2,39</span>
+          </div>
+          <button class="btn-ver">Ver</button>
+        </div>
+      </div>
+
+      <!-- Produto 6 -->
+      <div class="product-card">
+        <span class="discount-badge">-32%</span>
+        <div class="product-image-placeholder">[Img Macarrão]</div>
+        <div class="product-info">
+          <div class="product-name">Macarrão Adria Parafuso 500g</div>
+          <div class="price-row">
+            <span class="old-price">R$ 4,69</span>
+            <span class="current-price">R$ 3,19</span>
+          </div>
+          <button class="btn-ver">Ver</button>
+        </div>
+      </div>
+
+      <!-- Produto 7 -->
+      <div class="product-card">
+        <span class="discount-badge">-20%</span>
+        <div class="product-image-placeholder">[Img Produto]</div>
+        <div class="product-info">
+          <div class="product-name">Produto em Oferta</div>
+          <div class="price-row">
+            <span class="old-price">R$ 5,00</span>
+            <span class="current-price">R$ 4,00</span>
+          </div>
+          <button class="btn-ver">Ver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANÚNCIO -->
+  <div class="anuncio-bottom">
+    ANUNCIO AQUI
+  </div>
+
+  <div class="bottom-spacer"></div>
+
+  <script src="./js/base.js" defer></script>
+  <script>
+    // Categorias - seleção
+    document.querySelectorAll('.category-item').forEach(item => {
+      item.addEventListener('click', function () {
+        document.querySelectorAll('.category-item').forEach(i => i.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Botões "Ver"
+    document.querySelectorAll('.btn-ver').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const name = this.closest('.product-card').querySelector('.product-name').textContent;
+        alert('Abrir detalhes: ' + name);
+      });
+    });
+
+    // Banner button
+    document.querySelector('.banner-btn').addEventListener('click', function () {
+      alert('Ir para ofertas!');
+    });
+    // Dots do banner (simulação de carrossel)
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', function () {
+        dots.forEach(d => d.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+  </script>
+</body>
+
+</html>
